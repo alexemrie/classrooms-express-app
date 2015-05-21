@@ -1,0 +1,7 @@
+h1 List of all classrooms
+
+
+ul
+  each classroom in classrooms
+    li= classroom.name + ' has ' + classroom.numberOfSeats + ' seats in it'
+    a(href="/classrooms/#{classroom._id}") See Details
