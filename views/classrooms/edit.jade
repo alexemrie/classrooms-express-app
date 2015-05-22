@@ -11,11 +11,9 @@ html(lang="en")
       label(for="numberOfSeats") Number Of Seats
       input(name="numberOfSeats", type='text', value="#{classroom.numberOfSeats}")
 
-
       br
       label(for="hasKeg") Has Keg
-      input(type="checkbox", name="hasKeg", checked=(classroom.hasKeg===true ? "checked" : undefined))
-
+      input(type="checkbox", name="hasKeg", checked=(classroom.hasKeg ? "checked" : undefined))
 
       br
       br
