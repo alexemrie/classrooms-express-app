@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  body
+    h1= title
+
+    form(name="new-classroom", action= '/classrooms', method='post')
+      label(for="name") Name
+      input(name='name', type='text')
+
+      br
+      label(for="numberOfSeats") Number Of Seats
+      input(name="numberOfSeats", type='text')
+
+
+      br
+      label(for="hasKeg") Has Keg
+      input(name='hasKeg', type='checkbox', checked='checked')
+
+      br
+      br
+      input(type="submit", value="submit")

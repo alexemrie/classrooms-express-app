@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  body
+    h1 Edit This Classroom Yo
+
+    form(name="new-classroom", action= "/classrooms/#{classroom._id}/edit", method='post')
+      label(for="name") Name
+      input(name='name', type='text', value="#{classroom.name}")
+
+      br
+      label(for="numberOfSeats") Number Of Seats
+      input(name="numberOfSeats", type='text', value="#{classroom.numberOfSeats}")
+
+
+      br
+      label(for="hasKeg") Has Keg
+      input(name='hasKeg', type='checkbox', checked='checked', value="#{classroom.hasKeg}")
+
+      br
+      br
+      input(type="submit", value="submit")

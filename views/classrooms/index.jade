@@ -5,3 +5,6 @@ ul
   each classroom in classrooms
     li= classroom.name + ' has ' + classroom.numberOfSeats + ' seats in it'
     a(href="/classrooms/#{classroom._id}") See Details
+
+div
+  a(href="/classrooms/new") New Classroom
