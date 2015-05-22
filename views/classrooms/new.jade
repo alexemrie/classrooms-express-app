@@ -5,16 +5,17 @@ html(lang="en")
 
     form(name="new-classroom", action= '/classrooms', method='post')
       label(for="name") Name
-      input(name='name', type='text')
+      input(name='name', type='text', id="name")
 
       br
       label(for="numberOfSeats") Number Of Seats
-      input(name="numberOfSeats", type='text')
+      input(name="numberOfSeats", type='text', id="numberOfSeats")
 
 
       br
       label(for="hasKeg") Has Keg
-      input(name='hasKeg', type='checkbox')
+      input(name='hasKeg', type='checkbox', id="hasKeg")
+      input(type="hidden" name="hasKeg" value="0")
 
       br
       br

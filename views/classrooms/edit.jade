@@ -5,15 +5,15 @@ html(lang="en")
 
     form(name="new-classroom", action= "/classrooms/#{classroom._id}/edit", method='post')
       label(for="name") Name
-      input(name='name', type='text', value="#{classroom.name}")
+      input(name='name', type='text', id="name", value="#{classroom.name}")
 
       br
       label(for="numberOfSeats") Number Of Seats
-      input(name="numberOfSeats", type='text', value="#{classroom.numberOfSeats}")
+      input(name="numberOfSeats", type='text', id="numberOfSeats", value="#{classroom.numberOfSeats}")
 
       br
       label(for="hasKeg") Has Keg
-      input(type="checkbox", name="hasKeg", checked=(classroom.hasKeg ? "checked" : undefined))
+      input(type="checkbox", name="hasKeg", id="hasKeg", checked=(classroom.hasKeg ? "checked" : undefined))
 
       br
       br
