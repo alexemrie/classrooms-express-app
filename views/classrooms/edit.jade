@@ -14,7 +14,8 @@ html(lang="en")
 
       br
       label(for="hasKeg") Has Keg
-      input(name='hasKeg', type='checkbox', checked='checked', value="#{classroom.hasKeg}")
+      input(type="checkbox", name="hasKeg", checked=(classroom.hasKeg===true ? "checked" : undefined))
+
 
       br
       br

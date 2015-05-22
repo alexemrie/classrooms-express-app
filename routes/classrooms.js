@@ -76,7 +76,7 @@ router.get('/:id/edit', function(req, res) {
 });
 
 router.post('/:id/edit', function(req, res) {
-  console.log('accessed the put method');
+  console.log('accessed the post method');
   var name = req.body.name;
   var seats = req.body.numberOfSeats;
   var keg = req.body.hasKeg;
